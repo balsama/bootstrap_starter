@@ -1,0 +1,95 @@
+/**
+ * Columns
+ */
+@mixin columns($cols: 2) {
+  ul {
+    columns: $cols;
+    -webkit-columns: $cols;
+    -moz-columns: $cols;
+    ul {
+      columns: 1;
+      -webkit-columns: 1;
+      -moz-columns: 1;
+    }
+  }
+}
+
+// transition
+@mixin transition-all($duration: 1) {
+  transition: all #{$duration}s ease;
+  -moz-transition: all #{$duration}s ease;
+  -webkit-transition: all #{$duration}s ease;
+}
+
+// Rotate
+@mixin rotate($degrees) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+}
+
+// gradients
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+// CSS Hexagons
+@mixin hexagon {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 104px;
+  height: 60px;
+  background-color: $highlight-1;
+  position: relative;
+  &:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid $highlight-1;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+  }
+  &:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid $highlight-3;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+  }
+}
+
+// Border Clip
+@mixin background-clip($clip: border) {
+  -moz-background-clip: $clip;     /* Firefox 3.6 */
+  -webkit-background-clip: $clip;  /* Safari 4? Chrome 6? */
+  background-clip: #{$clip}-box;
+}
+
+// Axia icons
+@mixin axia-font() {
+  font-family: 'axia-icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
