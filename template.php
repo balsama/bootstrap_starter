@@ -22,11 +22,11 @@ function bootstrap_starter_preprocess_page(&$variables) {
     'path' => base_path() . drupal_get_path('theme', 'bootstrap_starter') . '/images/logo.svg',
     'alt' => 'Axia Logo',
     'attributes' => array(
-      // 'width' => 244, // Uncomment to add explicit width.
-      // 'height' => 193, // Uncomment to add explicit height.
-      'title' => 'Axia Home',
+      'width' => 100, // Update when you create your custom logo
+      'height' => 50,
+      'title' => 'Home',
       'class' => 'fluid js__svg-image',
     ),
   );
-  $variables['logo'] = theme('image', $logo_variables);
+  $variables['svg_logo'] = theme('image', $logo_variables);
 }
