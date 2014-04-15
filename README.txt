@@ -32,3 +32,16 @@ add custom classes to field wrappers, field titles, field containers, and field
 items. Just add a case in the `$name` switch for the field you want to target.
 It also comes with a logical field template that can be extended to individual
 fields by copying renaming it to `field—[field-name].tpl.php`.
+
+Javascript
+----------
+A theme JS file (/js/theme.js) is included at the bottom of each page via
+`drupal_add_js()` in `template.php` rather than using the `.info` file. This
+allows us to place the file outside of the header. The follwing scripts are
+also included:
+
+- html5.js: Shiv for IE < 8.
+- jquery.touchSwipe.min.js: Provides simple mouse and touch swipe events.
+- modernizr.custom.js: Tests for SVG and CSS Column support.
+- respond.min.js: Enables media query support for IE 8.
+
