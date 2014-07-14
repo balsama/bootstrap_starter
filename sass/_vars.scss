@@ -1,7 +1,5 @@
 // Font size
-$font-base: 1em;
-$font-sm: 0.875em;
-$font-xs: 0.75em;
+$font-base: percentage(10 / 16);  // 1rem = 10px
 
 // Colors
 $base-1: #02203f;
