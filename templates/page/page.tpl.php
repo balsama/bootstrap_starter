@@ -76,8 +76,8 @@
  */
 ?>
 <header>
-  <div class="container">  
-    <?php print l($svg_logo, base_path(), array('html' => TRUE)); ?>
+  <div class="container">
+    <?php print l($svg_logo, '<front>', array('html' => TRUE)); ?>
   </div>
   <div id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
     <div class="container">
