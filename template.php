@@ -99,6 +99,7 @@ function bootstrap_starter_preprocess_field(&$variables) {
     case 'field_name':
       $classes[] = 'my-class-name';
       break;
+  }
 
   // Apply odd or even classes along with our custom classes to each item */
   foreach ($variables['items'] as $delta => $item) {
@@ -106,3 +107,4 @@ function bootstrap_starter_preprocess_field(&$variables) {
     $variables['item_attributes_array'][$delta]['class'][] = $delta % 2 ? 'even' : 'odd';
   }
 }
+
