@@ -1,5 +1,26 @@
+# Ignore paths that contain user-generated content.
+docroot/files
+docroot/sites/*/files
+docroot/sites/*/private
+
+# Ignore paths that contain user-generated content.
+*/files
+*/private
+
+# SASS
+sass-cache/
+.sass-cache/
+
 # OS X
 *.swp
 ._.*
 ._*
 .DS_Store
+
+# Multisite symlinks
+adam.*
+bi-stage.*
+
+# Settings files
+*/settings*.php
+

@@ -1,0 +1,82 @@
+/**
+ * @file base.scss
+ *   Defaults. They are almost exclusively single element selectors but it
+ *   could include attribute selectors, pseudo-class selectors, child
+ *   selectors or sibling selectors. Essentially, a base style says that
+ *   wherever this element is on the page, it should look like this.
+ */
+/**
+ * Columns
+ */
+html {
+  font-size: 62.5%; }
+  @media (max-width: 1199px) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 991px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 767px) {
+    html {
+      font-size: 43.75%; } }
+
+body {
+  font-family: serif;
+  font-size: 1.8rem;
+  font-weight: 300; }
+
+h1 {
+  font-size: 3.6rem; }
+
+h2 {
+  font-size: 3.2rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.4rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 1.8rem; }
+
+a {
+  color: #1183f8; }
+  a:hover {
+    color: #1183f8;
+    text-decoration: underline; }
+
+.reverse-contrast {
+  background-color: #333333;
+  color: #a2a2a2; }
+  .reverse-contrast a {
+    color: #a2a2a2; }
+  .reverse-contrast.reverse-contrast__base-1 {
+    background-color: #02203f;
+    color: white; }
+    .reverse-contrast.reverse-contrast__base-1 label {
+      color: #b3ce00; }
+  .reverse-contrast h1, .reverse-contrast h2, .reverse-contrast h3, .reverse-contrast h4, .reverse-contrast h5, .reverse-contrast h6 {
+    color: white; }
+  .reverse-contrast .nav li a {
+    color: #a2a2a2; }
+    .reverse-contrast .nav li a:hover {
+      color: white; }
+    .reverse-contrast .nav li a:before {
+      background-color: #a2a2a2; }
+  .reverse-contrast .nav li.active a {
+    color: white; }
+    .reverse-contrast .nav li.active a:hover {
+      color: white; }
+
+.bgc-base-1 {
+  background-color: #02203f; }
+
+.text-white {
+  color: white !important; }
+
+.font-smaller {
+  font-size: 85%; }
