@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: serif;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 300; }
 
 h1 {
@@ -50,7 +50,7 @@ a {
     text-decoration: underline; }
 
 .reverse-contrast {
-  background-color: #333333;
+  background-color: #333;
   color: #a2a2a2; }
   .reverse-contrast a {
     color: #a2a2a2; }
@@ -80,3 +80,5 @@ a {
 
 .font-smaller {
   font-size: 85%; }
+
+/*# sourceMappingURL=base.css.map */
