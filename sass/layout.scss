@@ -7,6 +7,7 @@
 @import "mixins";
 
 .image-inline {
+  height: auto;
   max-width: 100%;
   &.image-inline_small_left,
   &.image-inline_small_right {
@@ -24,10 +25,12 @@
     &.image-inline_small_left,
     &.image-inline_media_left {
       float: left;
+      padding-right: 15px;
     }
     &.image-inline_small_right,
     &.image-inline_medium_right {
       float: right;
+      padding-left: 15px;
     }
   }
 }

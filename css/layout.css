@@ -6,6 +6,7 @@
  * Columns
  */
 .image-inline {
+  height: auto;
   max-width: 100%; }
   .image-inline.image-inline_small_left, .image-inline.image-inline_small_right {
     clear: both;
@@ -19,8 +20,10 @@
         width: 48%; } }
   @media (min-width: 768px) {
     .image-inline.image-inline_small_left, .image-inline.image-inline_media_left {
-      float: left; }
+      float: left;
+      padding-right: 15px; }
     .image-inline.image-inline_small_right, .image-inline.image-inline_medium_right {
-      float: right; } }
+      float: right;
+      padding-left: 15px; } }
 
 /*# sourceMappingURL=layout.css.map */
