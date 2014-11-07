@@ -5,3 +5,22 @@
 /**
  * Columns
  */
+.image-inline {
+  max-width: 100%; }
+  .image-inline.image-inline_small_left, .image-inline.image-inline_small_right {
+    clear: both;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .image-inline.image-inline_small_left, .image-inline.image-inline_small_right {
+        clear: none;
+        width: 40%; } }
+    @media (min-width: 992px) {
+      .image-inline.image-inline_small_left, .image-inline.image-inline_small_right {
+        width: 48%; } }
+  @media (min-width: 768px) {
+    .image-inline.image-inline_small_left, .image-inline.image-inline_media_left {
+      float: left; }
+    .image-inline.image-inline_small_right, .image-inline.image-inline_medium_right {
+      float: right; } }
+
+/*# sourceMappingURL=layout.css.map */
