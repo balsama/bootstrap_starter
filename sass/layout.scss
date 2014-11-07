@@ -23,6 +23,8 @@
   }
   &.image-inline_medium_left,
   &.image-inline_medium_right {
+    clear: both;
+    width: 100%;
     @media (min-width: 768px) {
       clear: none;
       width: 40%;
