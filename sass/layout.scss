@@ -15,6 +15,16 @@
     width: 100%;
     @media (min-width: 768px) {
       clear: none;
+      width: 30%;
+    }
+    @media (min-width: 992px) {
+      width: 20%;
+    }
+  }
+  &.image-inline_medium_left,
+  &.image-inline_medium_right {
+    @media (min-width: 768px) {
+      clear: none;
       width: 40%;
     }
     @media (min-width: 992px) {
